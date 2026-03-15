@@ -1,0 +1,6 @@
+/home/jitendra/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/common-events/src/main/java/com/jitendra/App.java
+/home/jitendra/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/common-events/src/main/java/com/jitendra/event/InventoryFailedEvent.java
+/home/jitendra/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/common-events/src/main/java/com/jitendra/event/InventoryReservedEvent.java
+/home/jitendra/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/common-events/src/main/java/com/jitendra/event/OrderCreatedEvent.java
+/home/jitendra/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/common-events/src/main/java/com/jitendra/event/PaymentFailedEvent.java
+/home/jitendra/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/common-events/src/main/java/com/jitendra/event/PaymentSuccessEvent.java
