@@ -1,6 +1,11 @@
+com/jitendra/event/PaymentSuccessEvent.class
 com/jitendra/event/InventoryReservedEvent.class
+com/jitendra/event/InventoryCreatedEvent.class
+com/jitendra/event/ProductCreatedEvent.class
 com/jitendra/event/OrderCreatedEvent.class
 com/jitendra/event/InventoryFailedEvent.class
+com/jitendra/event/AddToCartResponseEvent.class
 com/jitendra/App.class
+com/jitendra/event/AddToCartEvent.class
+com/jitendra/event/InventoryCheckEvent.class
 com/jitendra/event/PaymentFailedEvent.class
-com/jitendra/event/PaymentSuccessEvent.class
