@@ -1,17 +1,62 @@
 package com.jitendra.event;
 
 
+import java.util.List;
 
 public class OrderCreatedEvent {
 
     private Long orderId;
-    private Long productId;
-    private int quantity;
+    private Long userId;
+    private List<OrderItemDto> items;
+    private Double totalAmount;
+    private String status;
+    private  String firstName;
+    private  String lastName;
+    private  String email;
+    private  String phone;
 
-    public OrderCreatedEvent(Long orderId, int quantity, Long productId) {
+    public OrderCreatedEvent(Long orderId, String phone, String email, String lastName, String firstName, String status, Double totalAmount, List<OrderItemDto> items, Long userId) {
         this.orderId = orderId;
-        this.quantity = quantity;
-        this.productId = productId;
+        this.phone = phone;
+        this.email = email;
+        this.lastName = lastName;
+        this.firstName = firstName;
+        this.status = status;
+        this.totalAmount = totalAmount;
+        this.items = items;
+        this.userId = userId;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public OrderCreatedEvent() {
@@ -25,19 +70,35 @@ public class OrderCreatedEvent {
         this.orderId = orderId;
     }
 
-    public int getQuantity() {
-        return quantity;
+    public String getStatus() {
+        return status;
     }
 
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
+    public void setStatus(String status) {
+        this.status = status;
     }
 
-    public Long getProductId() {
-        return productId;
+    public Double getTotalAmount() {
+        return totalAmount;
     }
 
-    public void setProductId(Long productId) {
-        this.productId = productId;
+    public void setTotalAmount(Double totalAmount) {
+        this.totalAmount = totalAmount;
+    }
+
+    public List<OrderItemDto> getItems() {
+        return items;
+    }
+
+    public void setItems(List<OrderItemDto> items) {
+        this.items = items;
+    }
+
+    public Long getUserId() {
+        return userId;
+    }
+
+    public void setUserId(Long userId) {
+        this.userId = userId;
     }
 }

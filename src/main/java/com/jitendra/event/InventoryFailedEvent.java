@@ -1,24 +1,25 @@
 package com.jitendra.event;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
 public class InventoryFailedEvent {
+        private Long orderId;
 
-    private Long orderId;
-    private Long productId;
-    private int quantity;
-    private String reason;
-    private LocalDateTime timestamp;
+        private String reason;   // "OUT_OF_STOCK"
 
-    public InventoryFailedEvent() {
+        private List<FailedItem> failedItems; // OPTIONAL but powerful
+
+        private Long timestamp;
+
+    public InventoryFailedEvent(Long orderId, Long timestamp, List<FailedItem> failedItems, String reason) {
+        this.orderId = orderId;
+        this.timestamp = timestamp;
+        this.failedItems = failedItems;
+        this.reason = reason;
     }
 
-    public InventoryFailedEvent(Long orderId, Long productId, int quantity, String reason, LocalDateTime timestamp) {
-        this.orderId = orderId;
-        this.productId = productId;
-        this.quantity = quantity;
-        this.reason = reason;
-        this.timestamp = timestamp;
+    public InventoryFailedEvent() {
     }
 
     public Long getOrderId() {
@@ -29,20 +30,20 @@ public class InventoryFailedEvent {
         this.orderId = orderId;
     }
 
-    public Long getProductId() {
-        return productId;
+    public Long getTimestamp() {
+        return timestamp;
     }
 
-    public void setProductId(Long productId) {
-        this.productId = productId;
+    public void setTimestamp(Long timestamp) {
+        this.timestamp = timestamp;
     }
 
-    public int getQuantity() {
-        return quantity;
+    public List<FailedItem> getFailedItems() {
+        return failedItems;
     }
 
-    public void setQuantity(int quantity) {
-        this.quantity = quantity;
+    public void setFailedItems(List<FailedItem> failedItems) {
+        this.failedItems = failedItems;
     }
 
     public String getReason() {
@@ -51,13 +52,5 @@ public class InventoryFailedEvent {
 
     public void setReason(String reason) {
         this.reason = reason;
-    }
-
-    public LocalDateTime getTimestamp() {
-        return timestamp;
-    }
-
-    public void setTimestamp(LocalDateTime timestamp) {
-        this.timestamp = timestamp;
     }
 }
