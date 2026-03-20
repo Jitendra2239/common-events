@@ -9,16 +9,47 @@ public class PaymentFailedEvent {
     private double amount;
     private String reason;
     private LocalDateTime timestamp;
+    private  String email;
+    private  String name;
+    private  String phone;
 
     public PaymentFailedEvent() {
     }
 
-    public PaymentFailedEvent(Long orderId, String paymentId, double amount, String reason, LocalDateTime timestamp) {
+
+    public PaymentFailedEvent(Long orderId, String phone, String name, String email, LocalDateTime timestamp, String reason, double amount, String paymentId) {
         this.orderId = orderId;
-        this.paymentId = paymentId;
-        this.amount = amount;
-        this.reason = reason;
+        this.phone = phone;
+        this.name = name;
+        this.email = email;
         this.timestamp = timestamp;
+        this.reason = reason;
+        this.amount = amount;
+        this.paymentId = paymentId;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public Long getOrderId() {

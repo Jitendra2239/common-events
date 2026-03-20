@@ -2,18 +2,28 @@ package com.jitendra.event;
 
 
 public class NotificationEvent {
+    private Long order_id;
     private Long userId;
     private String email;
     private String phone;
     private String type;   // ORDER_PLACED, PAYMENT_SUCCESS
     private String message;
 
-    public NotificationEvent(Long userId, String email, String phone, String type, String message) {
-        this.userId = userId;
-        this.email = email;
-        this.phone = phone;
-        this.type = type;
+    public NotificationEvent(Long order_id, String message, String type, String phone, String email, Long userId) {
+        this.order_id = order_id;
         this.message = message;
+        this.type = type;
+        this.phone = phone;
+        this.email = email;
+        this.userId = userId;
+    }
+
+    public Long getOrder_id() {
+        return order_id;
+    }
+
+    public void setOrder_id(Long order_id) {
+        this.order_id = order_id;
     }
 
     public NotificationEvent() {
