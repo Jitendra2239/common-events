@@ -2,17 +2,17 @@ package com.jitendra.event;
 
 public class ProductCreatedEvent {
 
-    private Long productId;
+    private String productId;
     private String name;
 
     public ProductCreatedEvent() {}
 
-    public ProductCreatedEvent(Long productId, String name) {
+    public ProductCreatedEvent(String productId, String name) {
         this.productId = productId;
         this.name = name;
     }
 
-    public void setProductId(Long productId) {
+    public void setProductId(String productId) {
         this.productId = productId;
     }
 
@@ -20,7 +20,7 @@ public class ProductCreatedEvent {
         this.name = name;
     }
 
-    public Long getProductId() {
+    public String getProductId() {
         return productId;
     }
 

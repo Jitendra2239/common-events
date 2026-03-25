@@ -1,4 +1,3 @@
-com/jitendra/event/OrderItemDto.class
 com/jitendra/event/OrderPlacedEvent.class
 com/jitendra/event/InventoryReservedEvent.class
 com/jitendra/event/UserCreatedEvent.class
@@ -7,7 +6,9 @@ com/jitendra/event/ShipmentCreatedEvent.class
 com/jitendra/event/UserUpdatedEvent.class
 com/jitendra/event/AddToCartResponseEvent.class
 com/jitendra/App.class
+com/jitendra/event/OrderItemEvent.class
 com/jitendra/event/OrderCancelledEvent.class
+com/jitendra/event/ShipmentFailedEvent.class
 com/jitendra/event/PaymentSuccessEvent.class
 com/jitendra/event/FailedItem.class
 com/jitendra/event/InventoryCreatedEvent.class

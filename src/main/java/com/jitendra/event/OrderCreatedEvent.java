@@ -7,7 +7,7 @@ public class OrderCreatedEvent {
 
     private Long orderId;
     private Long userId;
-    private List<OrderItemDto> items;
+    private List<OrderItemEvent> items;
     private Double totalAmount;
     private String status;
     private  String firstName;
@@ -15,7 +15,7 @@ public class OrderCreatedEvent {
     private  String email;
     private  String phone;
 
-    public OrderCreatedEvent(Long orderId, String phone, String email, String lastName, String firstName, String status, Double totalAmount, List<OrderItemDto> items, Long userId) {
+    public OrderCreatedEvent(Long orderId, String phone, String email, String lastName, String firstName, String status, Double totalAmount, List<OrderItemEvent> items, Long userId) {
         this.orderId = orderId;
         this.phone = phone;
         this.email = email;
@@ -86,11 +86,11 @@ public class OrderCreatedEvent {
         this.totalAmount = totalAmount;
     }
 
-    public List<OrderItemDto> getItems() {
+    public List<OrderItemEvent> getItems() {
         return items;
     }
 
-    public void setItems(List<OrderItemDto> items) {
+    public void setItems(List<OrderItemEvent> items) {
         this.items = items;
     }
 

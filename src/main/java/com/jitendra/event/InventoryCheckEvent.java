@@ -6,13 +6,13 @@ public class InventoryCheckEvent implements Serializable {
 
     private String correlationId; // 🔥 VERY IMPORTANT
     private Long userId;
-    private Long productId;
+    private String productId;
     private int quantity;
 
     public InventoryCheckEvent() {
     }
 
-    public InventoryCheckEvent(String correlationId, Long userId, Long productId, int quantity) {
+    public InventoryCheckEvent(String correlationId, Long userId, String productId, int quantity) {
         this.correlationId = correlationId;
         this.userId = userId;
         this.productId = productId;
@@ -37,11 +37,11 @@ public class InventoryCheckEvent implements Serializable {
         this.userId = userId;
     }
 
-    public Long getProductId() {
+    public String  getProductId() {
         return productId;
     }
 
-    public void setProductId(Long productId) {
+    public void setProductId(String  productId) {
         this.productId = productId;
     }
 

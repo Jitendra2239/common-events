@@ -1,23 +1,23 @@
 package com.jitendra.event;
 
-public class OrderItemDto {
+public class OrderItemEvent {
 
-    private Long productId;
+    private String productId;
     private int quantity;
 
-    public OrderItemDto() {
+    public OrderItemEvent() {
     }
 
-    public OrderItemDto(Long productId, int quantity) {
+    public OrderItemEvent(String productId, int quantity) {
         this.productId = productId;
         this.quantity = quantity;
     }
 
-    public Long getProductId() {
+    public String getProductId() {
         return productId;
     }
 
-    public void setProductId(Long productId) {
+    public void setProductId(String productId) {
         this.productId = productId;
     }
 

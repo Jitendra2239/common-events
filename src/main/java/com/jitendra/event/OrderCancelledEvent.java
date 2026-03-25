@@ -12,7 +12,7 @@ public class OrderCancelledEvent {
     private String reason;
     private LocalDateTime cancelledAt;
 
-    private List<OrderItemDto> items;
+    private List<OrderItemEvent> items;
     private double totalAmount;
 
     public OrderCancelledEvent() {
@@ -20,7 +20,7 @@ public class OrderCancelledEvent {
         this.cancelledAt = LocalDateTime.now();
     }
 
-    public OrderCancelledEvent(String eventId, double totalAmount, List<OrderItemDto> items, LocalDateTime cancelledAt, String reason, Long userId, Long orderId) {
+    public OrderCancelledEvent(String eventId, double totalAmount, List<OrderItemEvent> items, LocalDateTime cancelledAt, String reason, Long userId, Long orderId) {
         this.eventId = eventId;
         this.totalAmount = totalAmount;
         this.items = items;
@@ -46,11 +46,11 @@ public class OrderCancelledEvent {
         this.totalAmount = totalAmount;
     }
 
-    public List<OrderItemDto> getItems() {
+    public List<OrderItemEvent> getItems() {
         return items;
     }
 
-    public void setItems(List<OrderItemDto> items) {
+    public void setItems(List<OrderItemEvent> items) {
         this.items = items;
     }
 

@@ -9,11 +9,12 @@
 /home/jitendra/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/common-events/src/main/java/com/jitendra/event/NotificationEvent.java
 /home/jitendra/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/common-events/src/main/java/com/jitendra/event/OrderCancelledEvent.java
 /home/jitendra/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/common-events/src/main/java/com/jitendra/event/OrderCreatedEvent.java
-/home/jitendra/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/common-events/src/main/java/com/jitendra/event/OrderItemDto.java
+/home/jitendra/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/common-events/src/main/java/com/jitendra/event/OrderItemEvent.java
 /home/jitendra/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/common-events/src/main/java/com/jitendra/event/OrderPlacedEvent.java
 /home/jitendra/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/common-events/src/main/java/com/jitendra/event/PaymentFailedEvent.java
 /home/jitendra/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/common-events/src/main/java/com/jitendra/event/PaymentSuccessEvent.java
 /home/jitendra/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/common-events/src/main/java/com/jitendra/event/ProductCreatedEvent.java
 /home/jitendra/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/common-events/src/main/java/com/jitendra/event/ShipmentCreatedEvent.java
+/home/jitendra/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/common-events/src/main/java/com/jitendra/event/ShipmentFailedEvent.java
 /home/jitendra/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/common-events/src/main/java/com/jitendra/event/UserCreatedEvent.java
 /home/jitendra/Documents/workspace-spring-tools-for-eclipse-4.31.0.RELEASE/common-events/src/main/java/com/jitendra/event/UserUpdatedEvent.java

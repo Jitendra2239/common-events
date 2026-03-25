@@ -2,22 +2,22 @@ package com.jitendra.event;
 
 public class InventoryCreatedEvent {
 
-    private Long productId;
+    private String productId;
     private String status;
 
     public InventoryCreatedEvent() {
     }
 
-    public InventoryCreatedEvent(Long  productId, String status) {
+    public InventoryCreatedEvent(String  productId, String status) {
         this.productId = productId;
         this.status = status;
     }
 
-    public Long  getProductId() {
+    public String  getProductId() {
         return productId;
     }
 
-    public void setProductId(Long  productId) {
+    public void setProductId(String  productId) {
         this.productId = productId;
     }
 

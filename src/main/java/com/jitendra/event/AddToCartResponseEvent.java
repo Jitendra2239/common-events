@@ -4,13 +4,13 @@ package com.jitendra.event;
 
 public class AddToCartResponseEvent {
     private Long userId;
-    private Long productId;
+    private String productId;
     private boolean success;
     private String message;
 
     private String productName;
     private Double price;
-    public AddToCartResponseEvent(Long userId, Long productId, String productName, Double price)
+    public AddToCartResponseEvent(Long userId,String productId, String productName, Double price)
     {
         this.userId = userId;
         this.productId = productId;
@@ -23,11 +23,11 @@ public class AddToCartResponseEvent {
     public AddToCartResponseEvent() {
     }
 
-    public Long getProductId() {
+    public String getProductId() {
         return productId;
     }
 
-    public void setProductId(Long productId) {
+    public void setProductId(String productId) {
         this.productId = productId;
     }
 
