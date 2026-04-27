@@ -8,17 +8,15 @@ public class PaymentSuccessEvent {
     private Long orderId;
     private String paymentId;
     private  String email;
-    private  String name;
-    private  String phone;
+    private  Long userId;
     private LocalDateTime timestamp;
     private double amount;
 
-    public PaymentSuccessEvent(Long orderId, double amount, LocalDateTime timestamp, String phone, String name, String email, String paymentId) {
+    public PaymentSuccessEvent(Long orderId, double amount, LocalDateTime timestamp, Long userrId, String email, String paymentId) {
         this.orderId = orderId;
         this.amount = amount;
         this.timestamp = timestamp;
-        this.phone = phone;
-        this.name = name;
+
         this.email = email;
         this.paymentId = paymentId;
     }
@@ -50,20 +48,12 @@ public class PaymentSuccessEvent {
         this.email = email;
     }
 
-    public String getPhone() {
-        return phone;
+    public Long getUserId() {
+        return userId;
     }
 
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
+    public void setUserId(Long userId) {
+        this.userId = userId;
     }
 
     public Long getOrderId() {
